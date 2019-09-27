@@ -29,7 +29,7 @@ else:
     if running_apps['elapsedTime']>threshold:
      with open('check_long_yarn_jobs.txt', 'a') as f:
         f.write('\n')
-        f.write("******LCG Long Yarn Jobs Over 4 Hours Please Investigate****** \n")
+        f.write("******DELIVERBI Long Yarn Jobs Over 4 Hours Please Investigate****** \n")
         print ("\nstartedTime: {}".format(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(running_apps['startedTime']/1000))),file=f)
         print ("finishedTime: {}".format(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(running_apps['finishedTime']/1000))),file=f)
         print ("App Name: {}".format(running_apps['name']),file=f)
@@ -44,6 +44,6 @@ else:
         #print ("Tracking Url: ",running_apps['trackingUrl'])
         #The URL Above is the seeded one , we have the tez ui too.
         if  float(time_hours)>4:
-            print('Alert WIll be Sent Email Query Has been running for Over 4 hours: '+ str(time_hours)+' -ApplicationId Please see output file check_long_yarn_jobs.txt')
+            print('DELIVERBI Alert WIll be Sent Email Query Has been running for Over 4 hours: '+ str(time_hours)+' -ApplicationId Please see output file check_long_yarn_jobs.txt')
 
-
+ ## You can add your alert mechanism here slack/ email / whatsapp .. :)
