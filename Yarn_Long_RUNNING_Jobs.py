@@ -1,6 +1,6 @@
 # This is the script to get the list of applications which are running for more than N hours in Tez Hive Yarn as Application
 #Python 3.6 
-#Author : Shahed Munir
+#Author : Shahed Munir and Krishna Udathu
 #Version : 1.0
 #Output Yarn Jobs that have been RUNNING for over 4 hours.
 import json, urllib.request, time
