@@ -40,9 +40,9 @@ else:
 # Elapsed time is given in milliseconds. So I divided by 1000, then 60, again 60 to convert it to hours.
         print ("Total elapsed time: {} hours".format(round(float(running_apps['elapsedTime']/1000/60/60),2)),file=f)
         time_hours=float(round(float(running_apps['elapsedTime']/1000/60/60),2))
-        print ('LCG TezTracking Url Bitvise: '+'http://127.0.0.1:8188/tez-ui/#/tez-app/'+str(running_apps['id']),file=f)
+        print ('Hive TezTracking Url Bitvise: '+'http://127.0.0.1:8188/tez-ui/#/tez-app/'+str(running_apps['id']),file=f)
         #print ("Tracking Url: ",running_apps['trackingUrl'])
-    
+        #The URL Above is the seeded one , we have the tez ui too.
         if  float(time_hours)>4:
             print('Alert WIll be Sent Email Query Has been running for Over 4 hours: '+ str(time_hours)+' -ApplicationId Please see output file check_long_yarn_jobs.txt')
 
